@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
             _scoreManager.SubtractPoints(5); 
         }
 
-        if ( _cardManager.GetMinGameOver() > _scoreManager.GetCurrentScore())
+        if ( _cardManager.GetMinGameOver() >= _scoreManager.GetCurrentScore())
         {
             GameOver();
         }
